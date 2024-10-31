@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 250px;
+            border: 12px solid #F5F5F5;
+            padding: 15px;
+            gap: 7px;
+        }
+        #form-container{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        h2{
+            text-align: center;
+            /* margin-top: 10px;  */
+        }
+        
+        
+        p{
+            color: red;
+            font-size: smaller;
+        }
+        button{
+            background-color: #0077F5;
+            color:white;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <h2>Sign Up</h2>
+        <div id="form-container">
+
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <p id="p-user"></p>
+            </div>
+
+            <div> 
+                <label for="Email">Email: </label>
+                <input type="email" id="Email" placeholder="Enter your Email" required>
+                <p id="p-email"></p>
+            </div>
+
+            <div>
+                <label for="Password">Password: </label>
+                <input type="password" id="Password" placeholder="Enter your Password" required>  
+                <p id="p-password"></p>
+            </div>
+
+            <div>
+                <label for="confirm-password">Confirm Password: </label>
+                <input type="password" id="confirm-password" placeholder="Re-enter your Password"   required>
+                <p id="p-confirm-password"></p>
+            </div>
+
+            <div>
+            <button id="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
